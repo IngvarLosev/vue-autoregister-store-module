@@ -1,5 +1,5 @@
 /**
- * in component some component
+ * in some component
  <script>
         import storage_mixin from '@mixins/storage-mixin';
         import storage from './storage';
