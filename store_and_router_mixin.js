@@ -1,6 +1,10 @@
 export default {
     methods: {
         clearObject(val) { return JSON.parse(JSON.stringify(val)); },
+        
+        /**
+         * $store....
+         */
         isModuleExists(module_name) { return !!this.$store.state[ module_name ]; },
         getMutationName(prop_name) {
             return (
@@ -42,8 +46,11 @@ export default {
             return this._getter(`${ module }/${ name }`, param);
         },
         
-        _router(name) {
+        /**
+         * $router....
+         */
+        _routerTo(name) {
             if (this.$router) this.$router.push({ name: name });
         }
-    },
+    }
 };
